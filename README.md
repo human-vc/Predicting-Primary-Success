@@ -40,10 +40,6 @@ Fundraising: Federal Election Commission filings
 
 Vote share: State election authority certified results
 
-## Citation
-
-Crainic, J. (2025). The Party Decides in Senate Primaries: Endorsements, Fundraising, and the Trump Effect, 2008-2022. Working Paper.
-
 ## License
 
 MIT License
