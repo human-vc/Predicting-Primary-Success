@@ -1,4 +1,4 @@
-# Predicting Primary Success
+# Predicting Primary Success: Early-Cycle Fundraising and Establishment Support in Republican Senate Races
 
 Replication materials for "The Party Decides in Senate Primaries: Endorsements, Fundraising, and the Trump Effect, 2008-2022"
 
