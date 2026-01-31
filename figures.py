@@ -15,8 +15,8 @@ X = sm.add_constant(df[['ln_fundraising', 'endorsement_score', 'trump_endorsemen
 model = sm.OLS(y, X).fit(cov_type='cluster', cov_kwds={'groups': df['race_id']})
 
 fig, ax = plt.subplots(figsize=(8, 5))
-vars_plot = ['ln_fundraising', 'endorsement_score', 'trump_endorsement', 'prior_office', 'field_size']
-labels = ['Log(Q1 Fundraising)', 'Endorsement Score', 'Trump Endorsement', 'Prior Office', 'Field Size']
+vars_plot = ['ln_fundraising', 'endorsement_score', 'prior_office', 'field_size']
+labels = ['Log(Q1 Fundraising)', 'Endorsement Score', 'Prior Office', 'Field Size']
 coefs = [model.params[v] for v in vars_plot]
 ses = [model.bse[v] for v in vars_plot]
 pvals = [model.pvalues[v] for v in vars_plot]
@@ -29,7 +29,7 @@ ax.axvline(x=0, color='black', linestyle='--', linewidth=1, alpha=0.5)
 ax.set_yticks(y_pos)
 ax.set_yticklabels(labels)
 ax.set_xlabel('Coefficient Estimate (95% CI)', fontsize=11)
-ax.set_xlim(-12, 12)
+ax.set_xlim(-6, 6)
 plt.tight_layout()
 plt.savefig('figures/fig1_coefficients.png', dpi=300, bbox_inches='tight', facecolor='white')
 plt.savefig('figures/fig1_coefficients.pdf', bbox_inches='tight', facecolor='white')
