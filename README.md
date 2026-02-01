@@ -20,14 +20,6 @@ Variables: race_id, year, state, race_type, candidate_name, vote_share, winner, 
 
 Endorsement weighting: U.S. Senator (3 points), same-state Governor (6 points), same-state U.S. Representative (2 points), Trump (6 points)
 
-## Code
-
-main_analysis.py: Primary OLS regression models, Trump endorsement comparison, variance inflation factors, bootstrap confidence intervals
-
-robustness_checks.py: Seven robustness specifications including full cycle fundraising, temporal splits, race type stratification, Super PAC controls
-
-figures.py: Publication-quality coefficient plot, marginal effects plot, robustness plot
-
 ## Requirements
 
 pandas>=2.1.0, numpy>=1.24.0, scipy>=1.11.0, statsmodels>=0.14.0, matplotlib>=3.8.0
